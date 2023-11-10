@@ -1,0 +1,374 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: max-content;
+   background-color: black;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+.logo h2 {
+    color: red;
+    cursor: pointer;
+    font-style: italic;
+}
+
+.logo a {
+    text-decoration: none;
+    color: red;
+}
+
+/* menu  */
+.menu {
+    width: 40%;
+    height: 80px;
+    color: white;
+    /* border: 2px solid green; */
+    position: relative;
+}
+
+.main {
+    width: 100%;
+    height: 80px;
+    /* border: 2px solid green; */
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+}
+
+.menu li {
+    font-weight: bold;
+    cursor: pointer;
+}
+.main li:hover{
+    color: red;
+}
+.main a:hover{
+    color: red;
+}
+
+/* subLists  */
+.subList {
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    top: 77px;
+    left: 25%;
+    /* border: 2px solid blue; */
+    text-align: center;
+    max-height: 0px;
+    overflow: hidden;
+}
+
+.subList li {
+    width: 100%;
+    height: auto;
+    list-style: none;
+    margin: 15px 0;
+    padding: 5px 0;
+    font-size:small;
+    cursor: pointer;
+}
+
+.anc {
+    background-color: black;
+    color: white;
+}
+
+.anc li:hover {
+    background-color: red;
+    color: white;
+}
+
+.main a {
+    text-decoration: none;
+    color: white;
+}
+
+.subListTwo {
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    top: 77px;
+    left: 75%;
+    /* border: 2px solid blue; */
+    text-align: center;
+    max-height: 0px;
+    overflow: hidden;
+}
+
+.subListTwo li {
+    width: 100%;
+    height: auto;
+    list-style: none;
+    margin: 15px 0;
+    padding: 5px 0;
+    font-size: small;
+    cursor: pointer;
+}
+
+/* hide and show of menu */
+
+/* for cat  */
+.subList.showList {
+    max-height: 400px;
+    opacity: 0.8;
+    transition: max-height 1s;
+}
+
+.subListTwo.showListTwoContact {
+    max-height: 400px;
+    opacity: 0.8;
+    transition: max-height 1s;
+}
+
+
+/* search_box  */
+.search_box {
+    width: 20%;
+    height: 30px;
+    /* border: 2px solid green; */
+    /* overflow: hidden; */
+    border-radius: 8px;
+}
+
+.search_box input {
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    position: relative;
+    cursor: pointer;
+}
+
+.search_box i {
+    position: absolute;
+    left: 340px;
+    top: 35px;
+    /* color:green; */
+}
+
+.search_box input::placeholder {
+    text-align: center;
+}
+
+.bar {
+    display: none;
+}
+
+/* .bar i{
+    color: white;
+    font-size: larger;
+} */
+
+
+
+/* datas  */
+.data{
+
+    width: 100%;
+    height: max-content;
+    margin-top: 10px;
+    color: #fff;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   gap: 10px;
+
+}
+
+.pic{
+    width: 160px;
+    height: auto;
+    /* border: 2px solid red; */
+   text-align: center;
+   cursor: pointer;
+}
+.pic img{
+    max-width: 100%;
+    height: auto;
+}
+
+.foot{
+    width: 100%;
+    height: auto;
+    color: red;
+    border: 2px solid red;
+    padding: 10px 0;
+    margin-top: 5px;
+    text-align: center;
+   
+}
+
+
+
+@media screen and (max-width:768px) {
+
+    .navbar {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .search_box input {
+        display: none;
+    }
+
+    .search_box i {
+        /* border:2px solid green; */
+        position: sticky;
+        left: 25px;
+        top:18px;
+        text-align: center;
+        font-size: large;
+        color: red;
+        cursor: pointer;
+    }
+
+
+    .bar {
+        display: block;
+        position: relative;
+        left: 6%;
+        color: white;
+        font-size: larger;
+    }
+
+    .bar i {
+        color: red;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .menu {
+        width: 150px;
+        height: 300px;
+        color: black;
+        position: absolute;
+        left: 79%;
+        top: 55px;
+        max-height: 0px;
+        overflow: hidden;
+    }
+
+    .main {
+
+        width: inherit;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        overflow: hidden;
+
+    }
+
+    .main li {
+        width: inherit;
+        height: auto;
+        padding: 5px 0;
+        overflow: hidden;
+    }
+
+
+    .main a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .main li:hover {
+        color: red;
+    }
+
+    .main a:hover {
+        color: red;
+    }
+
+    /* show home menu  */
+
+    .menu.showBar {
+        background-color: #fff;
+        color:black;
+        opacity: 0.9;
+        max-height: 300px;
+        transition: max-height 1s;
+    }
+
+    /* catogory list  */
+    .showList{
+        position: relative;
+        top: 5px;
+         /* height:170px; */
+         height:auto;
+        left: 0%; 
+        background-color: black;
+        /* color: red; */
+    }
+    .showList a{
+color: red;
+    }
+    .showList a:hover{
+        background-color: red;
+color: white;
+    }
+
+    /* contact list  */
+    .showListTwoContact{
+        background-color: black;
+        position: relative;
+        height: auto;
+        color: white;
+        left: 0%;
+        top: 5px;
+    }
+    .showListTwoContact a{
+        color: red;
+    }
+    .showListTwoContact a:hover{
+        color: white;
+        background-color: red;
+    }
+
+    .data{
+        margin-top: 10px;
+    }
+
+    
+}
+
+@media screen and (min-width:770px) and (max-width:1400px) {
+
+    .search_box {
+        width: 20%;
+    }
+
+    .search_box input {
+        width: 100%;
+
+    }
+
+    .search_box i {
+        position: absolute;
+        left: 24%;
+        top: 36px;
+    }
+
+}

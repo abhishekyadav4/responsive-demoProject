@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <h2><a href="index.html">E-Kart</a></h2>
+            </div>
+            <div class="search_box">
+                
+                <input type="text" placeholder="Search here for products" onclick="notWork()">
+                <i class="fa-solid fa-magnifying-glass" id="iconTwo" onclick="notWork()"></i>
+            </div>
+
+            <div class="bar">
+                <i class="fa-solid fa-bars"  onclick="showM()"></i>
+            </div>
+
+            <div class="menu" id="showBar">
+                <ul class="main">
+                    <li><a href="index.html">Home</a></li>
+                    <li id="cat" onclick="showListOne()">Category
+                        <ul class="subList anc" id="subList">
+                            <li><a href="#" onclick="filterData('shirtm')">Men</a></li>
+                            <li><a href="#" onclick="filterData('women')">Women</a></li>
+                            <li><a href="#" onclick="filterData('watch')">Watchs</a></li>
+                            <li><a href="#" onclick="filterData('mobile')">Mobiles</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html" target="_blank">About</a></li>
+                    <li id="contact" onclick="showListTwo()">Contact
+                        <ul class="subListTwo anc" id="subListTwo">
+                            <li><a href="https://www.google.com" target="_blank">Google</a></li>
+                            <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                            <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                            <li><a href="https://www.whatsapp.com" target="_blank">Whatsapp</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- datas  -->
+
+        <div class="data" id="mydata">
+            
+                <!-- <img src="images/mobile1.webp" alt="loading"> -->
+        
+        </div>
+
+        <footer class="foot">
+           <h3>Thank You for Visit</h3>
+           <p>Design By Abhishek Yadav</p>
+        </footer>
+    </div>
+
+   
+</body>
+<script src="script.js"></script>
+</html>
