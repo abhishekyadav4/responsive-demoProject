@@ -36,14 +36,12 @@
     width: 40%;
     height: 80px;
     color: white;
-    /* border: 2px solid green; */
     position: relative;
 }
 
 .main {
     width: 100%;
     height: 80px;
-    /* border: 2px solid green; */
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -69,7 +67,6 @@
     position: absolute;
     top: 77px;
     left: 25%;
-    /* border: 2px solid blue; */
     text-align: center;
     max-height: 0px;
     overflow: hidden;
@@ -86,14 +83,14 @@
 }
 
 .anc {
+  
     background-color: black;
     color: white;
 }
-
-.anc li:hover {
-    background-color: red;
-    color: white;
+.anc a{
+    padding: 5px 0;
 }
+
 
 .main a {
     text-decoration: none;
@@ -106,7 +103,6 @@
     position: absolute;
     top: 77px;
     left: 75%;
-    /* border: 2px solid blue; */
     text-align: center;
     max-height: 0px;
     overflow: hidden;
@@ -142,7 +138,6 @@
 .search_box {
     width: 20%;
     height: 30px;
-    /* border: 2px solid green; */
     /* overflow: hidden; */
     border-radius: 8px;
 }
@@ -159,7 +154,6 @@
     position: absolute;
     left: 340px;
     top: 35px;
-    /* color:green; */
 }
 
 .search_box input::placeholder {
@@ -184,7 +178,6 @@
     height: max-content;
     margin-top: 10px;
     color: #fff;
-    /* border: 2px solid green; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -195,7 +188,6 @@
 .pic{
     width: 160px;
     height: auto;
-    /* border: 2px solid red; */
    text-align: center;
    cursor: pointer;
 }
@@ -233,7 +225,6 @@
     }
 
     .search_box i {
-        /* border:2px solid green; */
         position: sticky;
         left: 25px;
         top:18px;
@@ -270,7 +261,6 @@
     }
 
     .main {
-
         width: inherit;
         height: max-content;
         display: flex;
@@ -320,7 +310,6 @@
          height:auto;
         left: 0%; 
         background-color: black;
-        /* color: red; */
     }
     .showList a{
 color: red;
@@ -371,4 +360,21 @@ color: white;
         top: 36px;
     }
 
+}
+
+@media screen and (max-width:430px) {
+    .menu {
+        width: 150px;
+        height: 300px;
+        color: black;
+        position: absolute;
+        left: 62%;
+        top: 55px;
+        max-height: 0px;
+        overflow: hidden;
+    }
+    .bar {
+        margin-right: 10px;
+    }
+    
 }
